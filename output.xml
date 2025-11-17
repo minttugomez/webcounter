@@ -1,86 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-17T11:11:11.699560" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-17T11:40:51.293625" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\mintt\Documents\school\ohtu\webcounter\src\tests">
 <suite id="s1-s1" name="Increment" source="C:\Users\mintt\Documents\school\ohtu\webcounter\src\tests\increment.robot">
 <kw name="Open And Configure Browser" owner="resource" type="SETUP">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-11-17T11:11:12.725868" elapsed="0.000525"/>
+<status status="PASS" start="2025-11-17T11:40:51.456607" elapsed="0.000212"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:12.726962" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-11-17T11:40:51.457110" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-11-17T11:11:12.726743" elapsed="1.838685"/>
+<status status="PASS" start="2025-11-17T11:40:51.456948" elapsed="1.169006"/>
 </kw>
-<status status="PASS" start="2025-11-17T11:11:12.724659" elapsed="1.840934"/>
+<status status="PASS" start="2025-11-17T11:40:51.456091" elapsed="1.170084"/>
 </kw>
 <test id="s1-s1-t1" name="At start the counter is zero" line="7">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:14.566505" level="INFO">Opening url 'http://localhost:5001'</msg>
+<msg time="2025-11-17T11:40:52.627456" level="INFO">Opening url 'http://localhost:5001'</msg>
 <arg>${HOME_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-11-17T11:11:14.566337" elapsed="0.853237"/>
+<status status="PASS" start="2025-11-17T11:40:52.627161" elapsed="0.859592"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:15.927687" level="INFO">Page title is 'Laskuri'.</msg>
+<msg time="2025-11-17T11:40:53.993429" level="INFO">Page title is 'Laskuri'.</msg>
 <arg>Laskuri</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-11-17T11:11:15.420045" elapsed="0.507863"/>
+<status status="PASS" start="2025-11-17T11:40:53.487261" elapsed="0.506423"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:16.946385" level="INFO">Current page contains text 'nappia painettu 0 kertaa'.</msg>
+<msg time="2025-11-17T11:40:55.077379" level="INFO">Current page contains text 'nappia painettu 0 kertaa'.</msg>
 <arg>nappia painettu 0 kertaa</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-11-17T11:11:15.928850" elapsed="1.017703"/>
+<status status="PASS" start="2025-11-17T11:40:53.994411" elapsed="1.083217"/>
 </kw>
-<status status="PASS" start="2025-11-17T11:11:14.565695" elapsed="2.381193"/>
+<status status="PASS" start="2025-11-17T11:40:52.626318" elapsed="2.451966"/>
 </test>
 <test id="s1-s1-t2" name="When button pressed twice the counter is two" line="12">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:16.948277" level="INFO">Opening url 'http://localhost:5001'</msg>
+<msg time="2025-11-17T11:40:55.080530" level="INFO">Opening url 'http://localhost:5001'</msg>
 <arg>${HOME_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-11-17T11:11:16.948151" elapsed="0.530147"/>
+<status status="PASS" start="2025-11-17T11:40:55.080133" elapsed="0.536384"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:17.479763" level="INFO">Clicking button 'Paina'.</msg>
+<msg time="2025-11-17T11:40:55.617364" level="INFO">Clicking button 'Paina'.</msg>
 <arg>Paina</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-17T11:11:17.478801" elapsed="2.489027"/>
+<status status="PASS" start="2025-11-17T11:40:55.617038" elapsed="2.422971"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:19.969276" level="INFO">Clicking button 'Paina'.</msg>
+<msg time="2025-11-17T11:40:58.041307" level="INFO">Clicking button 'Paina'.</msg>
 <arg>Paina</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-17T11:11:19.968712" elapsed="2.092063"/>
+<status status="PASS" start="2025-11-17T11:40:58.040857" elapsed="2.163562"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-11-17T11:11:23.087832" level="INFO">Current page contains text 'nappia painettu 2 kertaa'.</msg>
+<msg time="2025-11-17T11:41:01.222537" level="INFO">Current page contains text 'nappia painettu 2 kertaa'.</msg>
 <arg>nappia painettu 2 kertaa</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-11-17T11:11:22.061165" elapsed="1.026842"/>
+<status status="PASS" start="2025-11-17T11:41:00.205326" elapsed="1.017534"/>
 </kw>
-<status status="PASS" start="2025-11-17T11:11:16.947683" elapsed="6.140717"/>
+<status status="PASS" start="2025-11-17T11:40:55.079483" elapsed="6.144111"/>
+</test>
+<test id="s1-s1-t3" name="When counter has a nonzero value and it is reset the value becomes zero" line="18">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-17T11:41:01.226142" level="INFO">Opening url 'http://localhost:5001'</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-17T11:41:01.225783" elapsed="0.535058"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-17T11:41:01.762112" level="INFO">Clicking button 'Paina'.</msg>
+<arg>Paina</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-17T11:41:01.761620" elapsed="2.447833"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-17T11:41:04.210789" level="INFO">Clicking button 'Paina'.</msg>
+<arg>Paina</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-17T11:41:04.210167" elapsed="2.089639"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-17T11:41:06.300888" level="INFO">Clicking button 'Nollaa'.</msg>
+<arg>Nollaa</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-17T11:41:06.300652" elapsed="2.417940"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-17T11:41:09.746003" level="INFO">Current page contains text 'nappia painettu 0 kertaa'.</msg>
+<arg>nappia painettu 0 kertaa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-17T11:41:08.719616" elapsed="1.026609"/>
+</kw>
+<status status="PASS" start="2025-11-17T11:41:01.224679" elapsed="8.522305"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-11-17T11:11:23.089441" elapsed="2.704727"/>
+<status status="PASS" start="2025-11-17T11:41:09.749084" elapsed="2.625410"/>
 </kw>
-<status status="PASS" start="2025-11-17T11:11:11.786454" elapsed="14.007896"/>
+<status status="PASS" start="2025-11-17T11:40:51.313057" elapsed="21.061558"/>
 </suite>
-<status status="PASS" start="2025-11-17T11:11:11.700963" elapsed="14.096187"/>
+<status status="PASS" start="2025-11-17T11:40:51.294744" elapsed="21.083463"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
-<stat name="Increment" id="s1-s1" pass="2" fail="0" skip="0">Tests.Increment</stat>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
+<stat name="Increment" id="s1-s1" pass="3" fail="0" skip="0">Tests.Increment</stat>
 </suite>
 </statistics>
 <errors>
